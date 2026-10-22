@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>COSMIC 🐱 - Homepage</title>
+        <link rel="stylesheet" href="CSS-All.css">
+        <link rel="stylesheet" href="CSS-Homepage.css">
+        <link rel="stylesheet" href="https://cloudflare.com">
+    </head>
+    <body style="overflow-y: auto;">     
+        <header class="encabezado-sitio">
+            <div class="contenedor-logo"> 
+                <a href="Homepage.html"><img src="logo.jpeg" alt="COSMIC" class="logo-redondo"></a>
+                <span class="nombre-sitio">COSMIC</span>
+            </div>   
+            <nav class="navegacion-principal">
+                <button id="btn-tema" onclick="cambiarTema()">☀️️ Modo Claro</button>
+                <a href="Homepage.html" class="enlace-nav">Inicio</a>
+                <a href="#populares" class="enlace-nav">Populares</a>
+                <div class="desplegable">
+                    <button type="button" class="enlace-nav boton-desplegable" onclick="toggleCategorias()">Categorías <i class="fa-solid fa-chevron-down"></i></button>
+                    <div id="dropdown-categorias" class="menu-desplegable">
+                        <a href="#scifi">🤖 Sci-Fi / Cyberpunk</a>
+                        <a href="#shonen">🔥 Shonen / Acción</a>
+                        <a href="#fantasia">🐉 Fantasía</a>
+                        <a href="#terror">👻 Terror / Misterio</a>
+                        <a href="#romance">💖 Romance / Slice of Life</a>
+                        <a href="#seinen">⚔️ Seinen</a>
+                    </div>
+                </div>
+                <a href="https://www.instagram.com/cosmiccomics_/" target="_blank" rel="noopener noreferrer" class="enlace-nav">
+                    <img src="LogoInstagram.png" alt="" class="img-instagram">Instagram
+                </a>
+            </nav>
+        </header>
+
+        <main style="max-width: 1200px; margin: 40px auto; padding: 0 20px;">
+    
+            <section id="populares" class="carrusel-populares">
+                <button type="button" class="flecha" onclick="moverCarrusel(-1)">❮</button>
+                
+                <div class="contenedor-portada" style="height: auto; aspect-ratio: 2/3;">
+                    <a id="enlace-pdf-0" href="Comic1 - Ghost Rider by Donny Cates (2023) (digital-SD) (Dakota Scanning).pdf" target="_blank" rel="noopener noreferrer">
+                        <img id="portada-img-0" src="Portada Comic 1 - Ghost Rider by Donny Cates (2023).png" alt="Popular 1">
+                    </a>
+                </div>
+
+                <div class="contenedor-portada" style="height: auto; aspect-ratio: 2/3;">
+                    <a id="enlace-pdf-1" href="Comic2 - The Amazing Spider-an-comic-series.pdf" target="_blank" rel="noopener noreferrer">
+                        <img id="portada-img-1" src="Portada Comic 2 - The Amazing Spider-man-comic-series.png" alt="Popular 2">
+                    </a>
+                </div>
+
+                <div class="contenedor-portada" style="height: auto; aspect-ratio: 2/3;">
+                    <a id="enlace-pdf-2" href="Comic3 - Superman - The Man of Steel v01 (2020) (digital) (Son of Ultron-Empire).pdf" target="_blank" rel="noopener noreferrer">
+                        <img id="portada-img-2" src="Portada Comic 3 -  Superman - The Man of Steel (2020) (Son of Ultron-Empire).png" alt="Popular 3">
+                    </a>
+                </div>
+
+                <button type="button" class="flecha" onclick="moverCarrusel(1)">❯</button>
+            </section>
+
+            <section id="scifi" class="seccion-comics">
+                <h2>🤖 Sci-Fi / Cyberpunk</h2>
+                <div class="grid-comics">
+                    <div class="comic-card"><img src="gato-ciudad.jpg" alt="Cyber Cat Vol. 1"></div>
+                    <div class="comic-card"><img src="gato-ciudad.jpg" alt="Cyber Cat Vol. 2"></div>
+                    <div class="comic-card"><img src="gato-ciudad.jpg" alt="Cyber Cat Vol. 3"></div>
+                </div>
+            </section>
+
+            <section id="shonen" class="seccion-comics">
+                <h2>🔥 Shonen / Acción</h2>
+                <div class="grid-comics">
+                    <div class="comic-card">Próximamente</div>
+                    <div class="comic-card">Próximamente</div>
+                    <div class="comic-card">Próximamente</div>
+                </div>
+            </section>
+            
+            <h2 style="text-align: center; font-size: 2rem; margin-bottom: 30px;">Cómics Destacados</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px;">
+                <div style="background: #121212; border: 2px solid #a855f7; border-radius: 12px; padding: 15px; text-align: center; box-shadow: 0 0 15px rgba(168, 85, 247, 0.3);">
+                    <img src="gato-ciudad.jpg" alt="Comic" style="width: 100%; height: 280px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 1.2rem; margin: 15px 0 5px 0;">Cyber Cat Vol. 1</h3>
+                    <p style="color: #a0a5b5; font-size: 0.85rem; margin-bottom: 15px;">Sci-Fi / Cyberpunk</p>
+                    <a href="#" class="boton-colorful" style="font-size: 0.8rem; padding: 8px 15px;"><span>Leer Ahora 📖</span></a>
+                </div>
+                <div style="background: #121212; border: 2px solid #a855f7; border-radius: 12px; padding: 15px; text-align: center; box-shadow: 0 0 15px rgba(168, 85, 247, 0.3);">
+                    <img src="gato-ciudad.jpg" alt="Comic" style="width: 100%; height: 280px; object-fit: cover; border-radius: 8px;">
+                    <h3 style="font-size: 1.2rem; margin: 15px 0 5px 0;">Cyber Cat Vol. 2</h3>
+                    <p style="color: #a0a5b5; font-size: 0.85rem; margin-bottom: 15px;">Sci-Fi / Cyberpunk</p>
+                    <a href="#" class="boton-colorful" style="font-size: 0.8rem; padding: 8px 15px;"><span>Leer Ahora 📖</span></a>
+                </div>
+            </div>
+        </main>
+
+        <script>
+            function toggleCategorias() {
+                document.getElementById("dropdown-categorias").classList.toggle("mostrar");
+            }
+
+            window.onclick = function (event) {
+                if (!event.target.closest('.boton-desplegable')) {
+                    document.querySelectorAll(".menu-desplegable.mostrar")
+                        .forEach(m => m.classList.remove("mostrar"));
+                }
+                if (!event.target.matches('.boton-desplegable')) {
+                    var dropdowns = document.getElementsByClassName("menu-desplegable");
+                    for (var i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('mostrar')) {
+                            openDropdown.classList.remove('mostrar');
+                        }
+                    }
+                }
+            }
+
+            const datosCarrusel = [
+                {
+                    imagen: "Portada Comic 1 - Ghost Rider by Donny Cates (2023).png",
+                    pdf: "Comic1 - Ghost Rider by Donny Cates (2023) (digital-SD) (Dakota Scanning).pdf"
+                },
+                {
+                    imagen: "Portada Comic 2 - The Amazing Spider-man-comic-series.png",
+                    pdf: "Comic2 - The Amazing Spider-an-comic-series.pdf"
+                },
+                {
+                    imagen: "Portada Comic 3 -  Superman - The Man of Steel (2020) (Son of Ultron-Empire).png",
+                    pdf: "Comic3 - Superman - The Man of Steel v01 (2020) (digital) (Son of Ultron-Empire).pdf"
+                }
+            ]
+
+            let actual = 0;
+
+            function moverCarrusel(dir) {
+                actual = (actual + dir + datosCarrusel.length) % datosCarrusel.length;
+                actualizarCarrusel();
+            }
+
+            function actualizarCarrusel() {
+                for (let i = 0; i < 3; i++) {
+                    let indiceData = (actual + i) % datosCarrusel.length;
+                    
+                    const imgElemento = document.getElementById("portada-img-" + i);
+                    const enlaceElemento = document.getElementById("enlace-pdf-" + i);
+                    
+                    if (imgElemento && enlaceElemento) {
+                        imgElemento.src = datosCarrusel[indiceData].imagen;
+                        enlaceElemento.href = datosCarrusel[indiceData].pdf;
+                    }
+                }
+            }
+                    
+            function cambiarTema() {
+                document.body.classList.toggle("modo-claro");
+                var boton = document.getElementById("btn-tema");
+
+                if (document.body.classList.contains("modo-claro")) {
+                    boton.textContent = "🌙 Modo Oscuro";
+                } else {
+                    boton.textContent = "☀️ Modo Claro";
+                }
+            }
+        </script>
+    </body>
+</html>
